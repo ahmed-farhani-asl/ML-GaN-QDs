@@ -26,7 +26,6 @@ y = filtered_data['Bandgap (ev)']
 
 # Split data (90% train, 10% test)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10)
-print(len(y_test))
 
 # Feature selection
 selector = SelectKBest(score_func=f_regression, k='all')
